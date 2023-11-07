@@ -97,7 +97,7 @@
 
             <div class="col-md-3">
                 <label form="formGroupExampleInput" class="form-label">Categoría</label>
-                <select class="form-select col-md-3">
+                <select id="categoria" class="form-select col-md-3">
                     <option name="categoria">Estudiante</option>
                     <option name="categoria">Trainee</option>
                     <option name="categoria">junior</option>
@@ -105,10 +105,11 @@
             </div>
         <div>
         
-        <div class="resultado row abs-center" style="padding-top: 1%; ">
-            <span id="total" class="badge bg-info text-dark col-md-6" style="background-color: #B2E7FE; ">Total a pagar $</span>
+        <div class="alert alert-primary mt-2 mb-4 col-6 mx-auto" role="alert">
+            Total a pagar: $ <span id="total" class="align-middle"></span>
         </div>
-        
+
+               
         <div class="row abs-center" style="padding-top: 1%;">
             <div class="d-grid gap-2 col-3 mx-auto">
                 <button onclick="limpiar();" class="btn btn-primary">Borrar</button>
