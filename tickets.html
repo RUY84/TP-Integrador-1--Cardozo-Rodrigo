@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style-bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid" style=" padding: 0%;  ">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark " style=" background-color: #3a3a3a;">
+            <a class="navbar-logo col-lg-2 col-md-2 col-sm-2 col-xs-1 " href="index.html">
+              <img src="./assets/img/codoacodo.png" style="float: middle;" alt="LogoCodo a Codo;" >
+            </a>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-1" style="font-size: rem; color: white; float: middle ">
+              Conf Bs As
+            </div>
+            <div class="container-fluid col-lg-8 col-md-6 col-sm-2 mr-auto">
+              <a class="navbar-brand"  href="#">La conferencia</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Conviertete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true" style="color: green;">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      </nav>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top: 1%;">
+    <div class="card" style="width: 18rem; text-align: center; border-color: blue;">
+        <div class="card-body">
+          <h5 class="card-title">Estudiante</h5>
+          <p class="card-text" >Tiene un descuento</p>
+          <p class="card-title" >80%</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; text-align: center; border-color: green;">
+        <div class="card-body">
+          <h5 class="card-title">Trainee</h5>
+          <p class="card-text" >Tiene un descuento</p>
+          <p class="card-title" >50%</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; text-align: center; border-color: orange;">
+        <div class="card-body">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text" >Tiene un descuento</p>
+          <p class="card-title" >15%</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
+        </div>
+    </div>
+    </div>
+
+    <div class="row" style="text-align: center; padding-top: 1%; padding-bottom: 1%;">
+        <h6>VENTA</h6>
+        <h2><span style="font-weight: bold;"></span>VALOR DEL TICKET $200</h2>
+    </div>
+      <form>
+        <div class="row abs-center">
+            <div class="col-md-3" >
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+        </div>
+        <div class="row abs-center" style="padding-top: 1%;">
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+            </div>
+        </div>
+        </div>
+        <div class="row abs-center" style="padding-top: 1%;">
+            <div class="col-md-3">
+                <label form="formGroupExampleInput" class="form-label">Cantidad</label>                
+                <input id="cant" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad">     
+            </div>
+
+            <div class="col-md-3">
+                <label form="formGroupExampleInput" class="form-label">Categoría</label>
+                <select class="form-select col-md-3">
+                    <option name="categoria">Estudiante</option>
+                    <option name="categoria">Trainee</option>
+                    <option name="categoria">junior</option>
+                </select>     
+            </div>
+        <div>
+        
+        <div class="resultado row abs-center" style="padding-top: 1%; ">
+            <span id="total" class="badge bg-info text-dark col-md-6" style="background-color: #B2E7FE; ">Total a pagar $</span>
+        </div>
+        
+        <div class="row abs-center" style="padding-top: 1%;">
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button onclick="limpiar();" class="btn btn-primary">Borrar</button>
+                <button onclick="calcular()" class="btn btn-primary">Resumen</button>
+            </div>
+        </div>
+
+      </form>
+      
+    <div class="row" style="padding-top: 1%;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" style="background: rgb(36,65,76);
+        background: linear-gradient(90deg, rgba(36,65,76,1) 35%, rgba(28,97,133,1) 100%);" >
+          <div class="container-fluid" style="color: white">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conferencias</a>
+                </li> <li class="nav-item">
+                  <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script type="text/javaScript" src="/assets/js/code.js"></script>
+</body>
+</html>

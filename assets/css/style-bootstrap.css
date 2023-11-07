@@ -16,23 +16,12 @@
     height: auto;
 }
 
-.container-fluid .imagen{
-    background-image: url('../img/ba1.jpg');
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-color: black;
-    background-repeat: no-repeat;
-    
-}
+
 
 .centro{
     width:100%;
 }
 
-html{
-    height: 100%;
-}
 
 body {
     height: 100%;
@@ -54,3 +43,14 @@ body {
 .nav ul{
     float: right;
 }
+.abs-center {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    
+  }
+  
+  /*@media (max-width: @screen-xs-max) { 
+    
+    
+  }

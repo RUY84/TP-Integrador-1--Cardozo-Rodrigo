@@ -11,14 +11,14 @@
 <body>
   <div class="container-fluid" style=" padding: 0%;  ">
     <div class="row">
-      <nav class="navbar navbar-expand-lg navbar-dark" style=" background-color: #3a3a3a;">
-            <a class="navbar-logo" href="index.html">
-              <img src="./assets/img/codoacodo.png" style="float:right;">
+      <nav class="navbar navbar-expand-lg navbar-dark " style=" background-color: #3a3a3a;">
+            <a class="navbar-logo col-lg-2 col-md-2 col-sm-2 col-xs-1 " href="index.html">
+              <img src="./assets/img/codoacodo.png" style="float: middle;" alt="LogoCodo a Codo;" >
             </a>
-            <div class="col-2" style="font-size: 2rem;">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-1" style="font-size: rem; color: white; float: middle " href="/index.html">
               Conf Bs As
             </div>
-            <div class="container-fluid col-8 mr-auto">
+            <div class="container-fluid col-lg-8 col-md-6 col-sm-2 mr-auto">
               <a class="navbar-brand"  href="#">La conferencia</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
                       <a class="nav-link" href="#">Conviertete en orador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true" style="color: green;">Comprar tickets</a>
+                    <a class="nav-link" href="/tickets.html" aria-disabled="true" style="color: green;">Comprar tickets</a>
                   </li>
                 </ul>
               </div>
@@ -114,65 +114,39 @@
       <h2><span style="font-weight: bold;"></span>ORADORES</h2>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col ">
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <div class="col col-lg-3 justify-content-center">
         <div class="card h-100" style="width: 18rem;">
           <img src="./assets/img/steve.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+            <button type="button" class="btn btn-warning">JavaScript</button>
+            <button type="button" class="btn btn-info">React</button>
+            <h5 class="card-title">Steve Jobs</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis in, eveniet laboriosam iure, molestias doloremque odio voluptate optio veniam exercitationem, sed et facere ratione! Ratione recusandae nostrum dolor quia.          </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col col-lg-3 justify-content-center">
         <div class="card h-100" style="width: 18rem;">
           <img src="./assets/img/bill.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <button type="button" class="btn btn-warning">JavaScript</button>
+            <button type="button" class="btn btn-info">React</button>
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis, perferendis expedita, consectetur voluptate sequi possimus exercitationem porro fugiat cum voluptatem et amet pariatur dolorem sunt soluta rem cupiditate dignissimos.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col col-lg-3 justify-content-center">
         <div class="card h-100" style="width: 18rem;">
           <img src="./assets/img/ada.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <button type="button" class="btn btn-secondary">Negocios</button>
+            <button type="button" class="btn btn-danger">Startups</button>
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis magni id sequi expedita ducimus vero ex ratione nostrum sapiente. Nulla quidem aperiam, magnam officiis illum a omnis adipisci quam natus!</p>
           </div>
         </div>
       </div>
     </div>
-    <!--<div class="row ">
-              <div class="col-4" style="z-index: 1; display: inline-block; ">
-                <div class="card " style="width: 18rem; float: right;">
-                <img src="./assets/img/steve.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div></div>
-              <div class="col-4" style="z-index: 1; display: inline-block;">
-                <div class="card mx-auto" style="width: 18rem; ">
-                <img src="./assets/img/bill.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div></div>
-              <div class="col-4" style="z-index: 1; display: inline-block;">
-                <div class="card" style="width: 18rem;">
-                <img src="./assets/img/ada.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-          </div>
-        </div>
-        </div>-->
 
     <div class="row">
       <div class="col-6">
@@ -180,35 +154,37 @@
       </div>
       <div class="col-6" style="color: white; background-color: #3a3a3a; padding: 1% 0% 1% 1%;">
         <h2>Bs As - Octubre</h2>
-        <p>Buenos Aires es la provincia y la localidad mas grande del estado de Argentina, en los Estados UNidos. Honululu es la mas sureña de entre las principales ciudades estadounidenses. Aunqu ele nombre de Honululu refiere al area urbana de la costa sudeste de la isla de Oahu, la ciudad y el condado de HOnolulu han formado una ciudad condado consolidada que cubre toda laciudad (aporoximadamente 600 km cuadrados de superficie)</p>
+        <p>Buenos Aires es la provincia y la localidad mas grande del estado de Argentina, en los Estados Unidos. Honululu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honululu refiere al área urbana de la costa sudeste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km cuadrados de superficie)</p>
         <a href="#" class="btn btn-primary">Conoce más</a>
       </div>
     </div>
-
-    <div class="row" style="text-align: center; padding-top: 1%;">
+    
+    <div class="row" style="text-align: center; padding-top: 1%; padding-bottom: 1%;">
       <h6>CONVIERTETE EN UN</h6>
       <h2><span style="font-weight: bold;"></span>ORADOR</h2>
-      <p>Anotate como orador para dar una charla ignite. CUentanos de qué quieres habla.</p>
+      <p>Anotate como orador para dar una charla ignite. Cuentanos de qué quieres hablar.</p>
     </div>
-    <div class="row abs-center">
-        <div class="col-md-3" >
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-        </div>
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-        </div>
-    </div>
-    <div class="row abs-center">
-      <div class="mb-3 col-6" style="padding-top: 1%;">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
-        <label for="textArea">Recuerda incluir un título para tu charla.</label>
+    <form action="">
+      <div class="row abs-center">
+          <div class="col-md-3" >
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
       </div>
-    <div>
+      <div class="row abs-center">
+        <div class="mb-3 col-6" style="padding-top: 1%;">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
+          <label for="textArea">Recuerda incluir un título para tu charla.</label>
+        </div>
+      <div>
+      </form>
 
-    <div class="row">
+    <div class="row" style="padding-top: 1%;">
       <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" style="background: rgb(36,65,76);
       background: linear-gradient(90deg, rgba(36,65,76,1) 35%, rgba(28,97,133,1) 100%);" >
-        <div class="container-fluid" style="text: withe">
+        <div class="container-fluid" style="color: white">
           <a class="navbar-brand" href="#">Inicio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
