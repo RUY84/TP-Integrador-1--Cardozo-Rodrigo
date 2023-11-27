@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conferencia</title>
+    <title>Comprar tickets</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> <!--url falsa para quitar falla 404 de favicon.ico-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style-bootstrap.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -44,37 +45,37 @@
     </div>
 
     <div class="row justify-content-center" style="padding-top: 1%;">
-    <div class="card" style="width: 18rem; text-align: center; border-color: blue;">
+      <div class="card" style="width: 18rem; text-align: center; border-color: blue;">
         <div class="card-body">
           <h5 class="card-title">Estudiante</h5>
           <p class="card-text" >Tiene un descuento</p>
           <p class="card-title" >80%</p>
           <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
         </div>
-    </div>
-    <div class="card" style="width: 18rem; text-align: center; border-color: green;">
+      </div>
+      <div class="card" style="width: 18rem; text-align: center; border-color: green;">
         <div class="card-body">
           <h5 class="card-title">Trainee</h5>
           <p class="card-text" >Tiene un descuento</p>
           <p class="card-title" >50%</p>
           <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
         </div>
-    </div>
-    <div class="card" style="width: 18rem; text-align: center; border-color: orange;">
+      </div>
+      <div class="card" style="width: 18rem; text-align: center; border-color: orange;">
         <div class="card-body">
           <h5 class="card-title">Junior</h5>
           <p class="card-text" >Tiene un descuento</p>
           <p class="card-title" >15%</p>
           <h6 class="card-subtitle mb-2 text-body-secondary">*Presentar Documentación</h6>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="row" style="text-align: center; padding-top: 1%; padding-bottom: 1%;">
         <h6>VENTA</h6>
         <h2><span style="font-weight: bold;"></span>VALOR DEL TICKET $200</h2>
     </div>
-      <form>
+      <form action="">
         <div class="row abs-center">
             <div class="col-md-3" >
               <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
@@ -98,22 +99,22 @@
             <div class="col-md-3">
                 <label form="formGroupExampleInput" class="form-label">Categoría</label>
                 <select id="categoria" class="form-select col-md-3">
-                    <option name="categoria">Estudiante</option>
-                    <option name="categoria">Trainee</option>
-                    <option name="categoria">junior</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">junior</option>
                 </select>     
             </div>
         <div>
         
-        <div class="alert alert-primary mt-2 mb-4 col-6 mx-auto" role="alert">
+        <div id="total" class="alert alert-primary mt-2 mb-4 col-6 mx-auto" role="alert">
             Total a pagar: $ <span id="total" class="align-middle"></span>
         </div>
-
-               
+     
         <div class="row abs-center" style="padding-top: 1%;">
             <div class="d-grid gap-2 col-3 mx-auto">
-                <button onclick="limpiar();" class="btn btn-primary">Borrar</button>
-                <button onclick="calcular()" class="btn btn-primary">Resumen</button>
+                <button type="reset" id="borrar" class="btn btn-primary">Borrar</button>
+                <button type="button" id="resumen" class="btn btn-primary">Resumen</button>
+                <!--<button type="button" class="w-100 btn btn-lg btn-form" id="btnResumen">Resumen</button>-->
             </div>
         </div>
 
@@ -155,6 +156,7 @@
         </nav>
       </div>
     </div>
-    <script type="text/javaScript" src="/assets/js/code.js"></script>
+  </div>  
+  <script src="/assets/js/code.js"></script>
 </body>
 </html>
